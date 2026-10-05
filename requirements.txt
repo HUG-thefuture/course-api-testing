@@ -1,0 +1,10 @@
+# 项目一：选课系统接口自动化测试 —— 核心依赖
+fastapi>=0.110
+uvicorn[standard]>=0.29
+sqlalchemy>=2.0
+pydantic[email]>=2.0
+pytest>=8.0
+requests>=2.31
+
+# 项目二：博客 Web 冒烟测试 —— 额外依赖（需本机有 Chrome/Edge）
+selenium>=4.0

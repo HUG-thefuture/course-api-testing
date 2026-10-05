@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>选课系统接口自动化测试报告</title>
+<style>
+body{font-family:-apple-system,'Segoe UI',Arial,sans-serif;margin:24px;color:#222}
+h1{border-bottom:2px solid #333;padding-bottom:8px}
+.summary{display:flex;gap:16px;margin:16px 0}
+.card{padding:12px 20px;border-radius:8px;color:#fff;font-weight:600}
+table{border-collapse:collapse;width:100%;margin-top:12px}
+th,td{border:1px solid #ddd;padding:8px;text-align:left;font-size:13px;vertical-align:top}
+th{background:#f5f5f5}
+.name{font-family:monospace}
+.badge{color:#fff;padding:2px 10px;border-radius:12px;font-size:12px}
+.detail{white-space:pre-wrap;background:#fafafa;border-left:3px solid #dc3545;padding:6px;font-size:12px;margin:0;max-width:640px}
+</style></head><body>
+<h1>选课系统接口自动化测试报告</h1>
+<p>生成时间：2026-09-16 12:57:18</p>
+<div class="summary">
+  <div class="card" style="background:#333">总计 43</div>
+  <div class="card" style="background:#17a2b8">通过 43</div>
+  <div class="card" style="background:#dc3545">失败 0</div>
+  <div class="card" style="background:#6c757d">跳过 0</div>
+  <div class="card" style="background:#28a745">通过率 100.0%</div>
+</div>
+<table>
+<thead><tr><th>#</th><th>用例</th><th>结果</th><th>耗时</th><th>失败详情(断言信息/响应正文)</th></tr></thead>
+<tbody>
+        <tr>
+          <td>1</td>
+          <td class="name">api_tests/test_auth.py::test_login_success</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.035s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="name">api_tests/test_auth.py::test_login_failure[alice-wrong]</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.027s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="name">api_tests/test_auth.py::test_login_failure[nobody-pass123]</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.004s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="name">api_tests/test_auth.py::test_login_failure[-]</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="name">api_tests/test_auth.py::test_login_failure[alice-]</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.025s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="name">api_tests/test_auth.py::test_register_success</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.031s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="name">api_tests/test_auth.py::test_register_duplicate_username</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.034s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="name">api_tests/test_auth.py::test_register_allowed_roles[student]</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.038s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="name">api_tests/test_auth.py::test_register_allowed_roles[teacher]</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.029s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="name">api_tests/test_auth.py::test_register_admin_forbidden</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.004s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="name">api_tests/test_auth.py::test_admin_grant_role</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.095s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td class="name">api_tests/test_auth.py::test_password_stored_hashed</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.004s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td class="name">api_tests/test_auth.py::test_register_invalid_role</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.006s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td class="name">api_tests/test_auth.py::test_enroll_without_token</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td class="name">api_tests/test_auth.py::test_enroll_with_bad_token</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td class="name">api_tests/test_auth.py::test_enroll_with_legacy_forgeable_token</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td class="name">api_tests/test_capacity.py::test_capacity_one_first_seat_full_after</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.016s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td class="name">api_tests/test_capacity.py::test_capacity_one_second_student_rejected</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.055s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td class="name">api_tests/test_capacity.py::test_capacity_zero_rejected</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.007s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td class="name">api_tests/test_capacity.py::test_create_course_invalid_time_range</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.006s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td class="name">api_tests/test_capacity.py::test_concurrent_enroll_no_oversell</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.395s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td class="name">api_tests/test_conflict.py::test_enroll_time_conflict</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.016s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td class="name">api_tests/test_conflict.py::test_enroll_partial_overlap</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.022s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td class="name">api_tests/test_conflict.py::test_enroll_no_conflict_adjacent</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.025s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td class="name">api_tests/test_conflict.py::test_enroll_same_time_no_conflict_across_users</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.064s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td class="name">api_tests/test_enrollment.py::test_enroll_success_and_db</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.018s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td class="name">api_tests/test_enrollment.py::test_enroll_then_list_my_courses</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.017s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td class="name">api_tests/test_enrollment.py::test_enroll_duplicate</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.015s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td class="name">api_tests/test_enrollment.py::test_enroll_nonexistent_course</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td class="name">api_tests/test_enrollment.py::test_enroll_duplicate_does_not_double_count</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.02s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td class="name">api_tests/test_enrollment.py::test_unenroll_success_and_db</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.022s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>32</td>
+          <td class="name">api_tests/test_enrollment.py::test_unenroll_not_enrolled</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.006s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td class="name">api_tests/test_enrollment.py::test_unenroll_twice</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.023s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>34</td>
+          <td class="name">api_tests/test_enrollment.py::test_enroll_capacity_full</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.007s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td class="name">api_tests/test_enrollment.py::test_enroll_capacity_exactly_one_seat</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.009s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>36</td>
+          <td class="name">api_tests/test_permission.py::test_teacher_cannot_enroll</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>37</td>
+          <td class="name">api_tests/test_permission.py::test_teacher_cannot_unenroll</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>38</td>
+          <td class="name">api_tests/test_permission.py::test_student_cannot_access_admin_stats</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>39</td>
+          <td class="name">api_tests/test_permission.py::test_teacher_cannot_access_admin_stats</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td class="name">api_tests/test_permission.py::test_student_cannot_create_course</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.005s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td class="name">api_tests/test_permission.py::test_admin_can_access_stats</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.009s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>42</td>
+          <td class="name">api_tests/test_permission.py::test_admin_can_create_course</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.008s</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>43</td>
+          <td class="name">api_tests/test_permission.py::test_admin_can_enroll</td>
+          <td><span class="badge" style="background:#28a745">passed</span></td>
+          <td>0.006s</td>
+          <td></td>
+        </tr></tbody>
+</table>
+</body></html>

@@ -1,0 +1,16 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      # conftest 会自起 uvicorn 子进程并自选空闲端口；
+      # 依赖来自 pip 而非 vendor，需显式 USE_BUNDLED_VENDOR=0
+      - run: python -m pytest api_tests -q
+        env:
+          USE_BUNDLED_VENDOR: "0"
